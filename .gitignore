@@ -10,6 +10,7 @@
 /KSFramework/Assets/ILRuntimeBridge/Generated/*
 /KSFramework/Assets/KSFramework/Plugins/Reporter
 
+/KSFramework/.vsconfig
 /KSFramework/Lua/*
 /KSFramework/LuaOut/*
 /KSFramework/UnityAPI/
