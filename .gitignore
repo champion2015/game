@@ -288,3 +288,5 @@ Temp
 #not contains sln?
 *.sln
 *.csproj
+/KSFramework/Product/Android-version.txt
+/KSFramework/Assets/StreamingAssets
