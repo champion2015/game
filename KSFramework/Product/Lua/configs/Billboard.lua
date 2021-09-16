@@ -6,8 +6,8 @@
 return {
 ["Billboard1"] = {
 	Id="Billboard1",
-	Title="公告1XXXXXXXX",
-	Content="公告内容aaaaaaaa"
+	Title="公告1",
+	Content="公告内容11111111111111111111111"
 },
 ["Billboard2"] = {
 	Id="Billboard2",
