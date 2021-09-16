@@ -32,7 +32,7 @@ namespace XLua
             }
 
             string traceback = LuaAPI.lua_tostring(L, -1);
-            s +=  traceback.Replace("stack traceback:\n", "");
+            //s +=  traceback.Replace("stack traceback:\n", "");
             LuaAPI.lua_pop(L, 1); /* pop result */
             try
             {
@@ -41,6 +41,7 @@ namespace XLua
             catch (Exception)
             {
                 //UnityEngine.Debug.LogError(ex.Message);
+                s += traceback.Replace("stack traceback:\n", "");
                 UnityEngine.Debug.Log("LUA: " + s);
             }
             

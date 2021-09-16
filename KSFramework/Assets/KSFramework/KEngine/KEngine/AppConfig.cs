@@ -54,12 +54,12 @@ public class AppConfig
     /// <summary>
     /// cdn资源地址，正式项目通过服务器下发
     /// </summary>
-     public static string resUrl = "http://127.0.0.1:8080/cdn/";
+     public static string resUrl = "http://10.15.65.85:8080/cdn/";
     //public static string resUrl = "http://192.168.190.112:8080/cdn/";
     /// <summary>
     /// 是否开启下载更新的功能，doc:https://mr-kelly.github.io/KSFramework/advanced/autoupdate/
     /// </summary>
-    public static bool IsDownloadRes = false;
+    public static bool IsDownloadRes = true;
 
     public static string VersionTextPath
     {
@@ -112,7 +112,7 @@ public class AppConfig
     public const string SettingExt = ".tsv";
 
     //; config use lua  or c# + tsv
-    public static bool IsUseLuaConfig = false;
+    public static bool IsUseLuaConfig = true;
     public const string SettingSourcePath = "Product/SettingSource";
     public const string ExportLuaPath = "Product/Lua/configs/";
     public const string ExportTsvPath = "Product/Setting";

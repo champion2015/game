@@ -124,6 +124,10 @@ public class DownloadManager : KSingleton<DownloadManager>
         }
 
         url = KResourceModule.GetResourceFullPath(AppConfig.VersionTxtName, false);
+        if(Application.platform == RuntimePlatform.Android && url.StartsWith("/data/app"))
+        {
+            url = "jar:file://" + url;
+        } 
         Log.LogToFile($"读取本地version.txt:{url}");
         loader = KWWWLoader.Load(url);
         while (!loader.IsCompleted)
